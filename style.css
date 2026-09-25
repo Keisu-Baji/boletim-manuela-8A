@@ -1,0 +1,148 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CORPO DA PÁGINA ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d1b2a; /* fundo escuro azulado */
+  color: #ffffff;            /* texto branco */
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  color: #c9d6e2;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+/* ===== CARDS DE RESUMO ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background-color: #1b263b; /* azul-marinho */
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  border: 1px solid #2e3b55;
+}
+
+.card-titulo {
+  font-size: 0.85rem;
+  color: #c9d6e2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-valor {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-obs {
+  font-size: 0.75rem;
+  color: #9fb3c8;
+}
+
+/* ===== TABELA ===== */
+.tabela-container {
+  overflow-x: auto; /* permite rolar no celular */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.boletim {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* força rolagem em telas pequenas */
+  background-color: #1b263b;
+}
+
+.boletim thead {
+  background-color: #0d1b2a;
+}
+
+.boletim th,
+.boletim td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #2e3b55;
+  font-size: 0.9rem;
+}
+
+.boletim th {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.boletim td {
+  color: #e0e6ed;
+}
+
+/* Nome da disciplina alinhado à esquerda */
+.boletim td:first-child {
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ===== SITUAÇÕES ===== */
+.situacao-bom {
+  color: #4ade80; /* verde */
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #fbbf24; /* amarelo */
+  font-weight: bold;
+}
+
+.situacao-indisponivel {
+  color: #9fb3c8; /* cinza claro */
+  font-style: italic;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-valor {
+    font-size: 1.4rem;
+  }
+
+  .boletim th,
+  .boletim td {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+}
