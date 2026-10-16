@@ -1,3 +1,4 @@
+
 /* ===== RESET BÁSICO ===== */
 * {
   margin: 0;
@@ -145,4 +146,137 @@ body {
     padding: 8px 6px;
     font-size: 0.8rem;
   }
+}
+
+/* ===== TELA DE ACESSO (PIN) ===== */
+.acesso {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.acesso-card {
+  background-color: #1b263b;
+  border: 1px solid #2e3b55;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.acesso-titulo {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.acesso-info {
+  font-size: 0.9rem;
+  color: #c9d6e2;
+  text-align: center;
+}
+
+.acesso-label {
+  font-size: 0.85rem;
+  color: #c9d6e2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.acesso-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2e3b55;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.acesso-input:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.acesso-mensagem {
+  font-size: 0.85rem;
+  color: #fbbf24;
+  text-align: center;
+  min-height: 1.2em;
+}
+
+/* ===== BOTÕES ===== */
+.botao {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.botao:hover {
+  opacity: 0.85;
+}
+
+.botao-primario {
+  background-color: #2e5c9a;
+  color: #ffffff;
+}
+
+.botao-secundario {
+  background-color: #1b263b;
+  color: #ffffff;
+  border: 1px solid #4a6fa5;
+}
+
+/* ===== ÁREA DE AÇÕES ===== */
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.edicao-mensagem {
+  font-size: 0.85rem;
+  color: #fbbf24;
+}
+
+/* ===== UTILITÁRIOS ===== */
+.escondido {
+  display: none !important;
+}
+
+.conteudo-boletim {
+  margin-top: 8px;
+}
+
+/* ===== CAMPOS DE EDIÇÃO NA TABELA ===== */
+.boletim input.campo-edicao {
+  width: 70px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #2e3b55;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.boletim input.campo-edicao:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.boletim input.campo-edicao.invalido {
+  border-color: #ef4444;
+  background-color: #3b1414;
 }
