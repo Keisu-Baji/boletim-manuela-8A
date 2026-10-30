@@ -1,4 +1,27 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* ===== CORPO DA PÁGINA ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d1b2a; /* fundo escuro azulado */
+  color: #ffffff;            /* texto branco */
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
 /* ===== RESET BÁSICO ===== */
 * {
   margin: 0;
@@ -279,4 +302,631 @@ body {
 .boletim input.campo-edicao.invalido {
   border-color: #ef4444;
   background-color: #3b1414;
+}
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  color: #c9d6e2;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+/* ===== CARDS DE RESUMO ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CORPO DA PÁGINA ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d1b2a; /* fundo escuro azulado */
+  color: #ffffff;            /* texto branco */
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  color: #c9d6e2;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+/* ===== CARDS DE RESUMO ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background-color: #1b263b; /* azul-marinho */
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  border: 1px solid #2e3b55;
+}
+
+.card-titulo {
+  font-size: 0.85rem;
+  color: #c9d6e2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-valor {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-obs {
+  font-size: 0.75rem;
+  color: #9fb3c8;
+}
+
+/* ===== TABELA ===== */
+.tabela-container {
+  overflow-x: auto; /* permite rolar no celular */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.boletim {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* força rolagem em telas pequenas */
+  background-color: #1b263b;
+}
+
+.boletim thead {
+  background-color: #0d1b2a;
+}
+
+.boletim th,
+.boletim td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #2e3b55;
+  font-size: 0.9rem;
+}
+
+.boletim th {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.boletim td {
+  color: #e0e6ed;
+}
+
+/* Nome da disciplina alinhado à esquerda */
+.boletim td:first-child {
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ===== SITUAÇÕES ===== */
+.situacao-bom {
+  color: #4ade80; /* verde */
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #fbbf24; /* amarelo */
+  font-weight: bold;
+}
+
+.situacao-indisponivel {
+  color: #9fb3c8; /* cinza claro */
+  font-style: italic;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-valor {
+    font-size: 1.4rem;
+  }
+
+  .boletim th,
+  .boletim td {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ===== TELA DE ACESSO (PIN) ===== */
+.acesso {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.acesso-card {
+  background-color: #1b263b;
+  border: 1px solid #2e3b55;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.acesso-titulo {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.acesso-info {
+  font-size: 0.9rem;
+  color: #c9d6e2;
+  text-align: center;
+}
+
+.acesso-label {
+  font-size: 0.85rem;
+  color: #c9d6e2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.acesso-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2e3b55;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.acesso-input:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.acesso-mensagem {
+  font-size: 0.85rem;
+  color: #fbbf24;
+  text-align: center;
+  min-height: 1.2em;
+}
+
+/* ===== BOTÕES ===== */
+.botao {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.botao:hover {
+  opacity: 0.85;
+}
+
+.botao-primario {
+  background-color: #2e5c9a;
+  color: #ffffff;
+}
+
+.botao-secundario {
+  background-color: #1b263b;
+  color: #ffffff;
+  border: 1px solid #4a6fa5;
+}
+
+/* ===== ÁREA DE AÇÕES ===== */
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.edicao-mensagem {
+  font-size: 0.85rem;
+  color: #fbbf24;
+}
+
+/* ===== UTILITÁRIOS ===== */
+.escondido {
+  display: none !important;
+}
+
+.conteudo-boletim {
+  margin-top: 8px;
+}
+
+/* ===== CAMPOS DE EDIÇÃO NA TABELA ===== */
+.boletim input.campo-edicao {
+  width: 70px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #2e3b55;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.boletim input.campo-edicao:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.boletim input.campo-edicao.invalido {
+  border-color: #ef4444;
+  background-color: #3b1414;
+}
+
+.card {
+  background-color: #1b263b; /* azul-marinho */
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  border: 1px solid #2e3b55;
+}
+
+.card-titulo {
+  font-size: 0.85rem;
+  color: #c9d6e2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-valor {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-obs {
+  font-size: 0.75rem;
+  color: #9fb3c8;
+}
+
+/* ===== TABELA ===== */
+.tabela-container {
+  overflow-x: auto; /* permite rolar no celular */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.boletim {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* força rolagem em telas pequenas */
+  background-color: #1b263b;
+}
+
+.boletim thead {
+  background-color: #0d1b2a;
+}
+
+.boletim th,
+.boletim td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #2e3b55;
+  font-size: 0.9rem;
+}
+
+.boletim th {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.boletim td {
+  color: #e0e6ed;
+}
+
+/* Nome da disciplina alinhado à esquerda */
+.boletim td:first-child {
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ===== SITUAÇÕES ===== */
+.situacao-bom {
+  color: #4ade80; /* verde */
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #fbbf24; /* amarelo */
+  font-weight: bold;
+}
+
+.situacao-indisponivel {
+  color: #9fb3c8; /* cinza claro */
+  font-style: italic;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-valor {
+    font-size: 1.4rem;
+  }
+
+  .boletim th,
+  .boletim td {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ===== TELA DE ACESSO (PIN) ===== */
+.acesso {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.acesso-card {
+  background-color: #1b263b;
+  border: 1px solid #2e3b55;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.acesso-titulo {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.acesso-info {
+  font-size: 0.9rem;
+  color: #c9d6e2;
+  text-align: center;
+}
+
+.acesso-label {
+  font-size: 0.85rem;
+  color: #c9d6e2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.acesso-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2e3b55;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.acesso-input:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.acesso-mensagem {
+  font-size: 0.85rem;
+  color: #fbbf24;
+  text-align: center;
+  min-height: 1.2em;
+}
+
+/* ===== BOTÕES ===== */
+.botao {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.botao:hover {
+  opacity: 0.85;
+}
+
+.botao-primario {
+  background-color: #2e5c9a;
+  color: #ffffff;
+}
+
+.botao-secundario {
+  background-color: #1b263b;
+  color: #ffffff;
+  border: 1px solid #4a6fa5;
+}
+
+/* ===== ÁREA DE AÇÕES ===== */
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.edicao-mensagem {
+  font-size: 0.85rem;
+  color: #fbbf24;
+}
+
+/* ===== UTILITÁRIOS ===== */
+.escondido {
+  display: none !important;
+}
+
+.conteudo-boletim {
+  margin-top: 8px;
+}
+
+/* ===== CAMPOS DE EDIÇÃO NA TABELA ===== */
+.boletim input.campo-edicao {
+  width: 70px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #2e3b55;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.boletim input.campo-edicao:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.boletim input.campo-edicao.invalido {
+  border-color: #ef4444;
+  background-color: #3b1414;
+}
+
+/* ===== ÁREA DOS GRÁFICOS ===== */
+.area-graficos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.grafico-card {
+  background-color: #1b263b;
+  border: 1px solid #2e3b55;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.grafico-titulo {
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.grafico-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+}
+
+.grafico-container.grafico-alto {
+  height: 420px;
+}
+
+.grafico-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Badge de Perigo */
+.badge-perigo {
+  display: inline-block;
+  background-color: #b91c1c;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.grafico-card.em-perigo {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 1px #b91c1c, 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== RESPONSIVIDADE DOS GRÁFICOS ===== */
+@media (max-width: 1000px) {
+  .area-graficos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grafico-card.grafico-largo {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .area-graficos {
+    grid-template-columns: 1fr;
+  }
+
+  .grafico-container {
+    height: 240px;
+  }
+
+  .grafico-container.grafico-alto {
+    height: 380px;
+  }
 }
